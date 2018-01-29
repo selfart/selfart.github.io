@@ -1,0 +1,32 @@
+﻿<head>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<embed src="files/music.mp3" height="0" width="0" loop="true" autostart="true" hidden="true" />
+</head>
+<body>
+	<center>
+		<div class="nav">
+			<div class="title"></div>
+			<div class="author"></div>
+		</div>
+		<video autoplay loop id="video-background" muted plays-inline>
+                <source src="files/video.mp4" type="video/mp4">
+		</video>
+		<div class="post" id="post1">
+			<div class="titleDiv">Post 2</div>
+			<div class="content">Este es mi segundo post.</div>
+		</div>
+		<div class="post">
+			<div class="titleDiv">Hola me llamo diego</div>
+			<div class="content">Este es mi primer post.</div>
+		</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="files/config.json"></script>
+	<script>
+		$(function(){
+			console.log("something");
+			$(".title").text(data.title);
+			$(".author").text(data.author);
+		});
+	</script>
+</body>
